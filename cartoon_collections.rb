@@ -21,10 +21,23 @@ def find_the_cheese(items) # arg contains list of items called "items"
   # array "cheese_types" to compare against arg "items"
   cheese_types = ["cheddar", "gouda", "camembert"]
   
-  # use find to find first item that matches any cheese
+  # use find to find first item that includes a cheese
   items.find {|item|
     cheese_types.any? {|cheese|
       cheese == item
     }
   }
 end
+
+# def find_the_cheese(items) # arg contains list of items called "items"
+#   # array "cheese_types" to compare against arg "items"
+#   cheese_types = ["cheddar", "gouda", "camembert"]
+  
+#   # use find to find first item that matches any cheese
+#   items.find {|item|
+#     cheese_types.any? {|cheese|
+#       cheese == item
+#     }
+#   }
+# end
+
