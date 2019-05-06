@@ -24,7 +24,6 @@ def find_the_cheese(items) # arg contains list of items called "items"
   # use find to find first item that includes a cheese
   items.find {|item|
     cheese_types.include?(item)
-    }
   }
 end
 
