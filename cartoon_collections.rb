@@ -21,11 +21,13 @@ def find_the_cheese(items) # arg contains list of items called "items"
   # array "cheese_types" to compare against arg "items"
   cheese_types = ["cheddar", "gouda", "camembert"]
   
-  # use find to find first item that includes a cheese
+  # use find to find first item that is included in cheese list
   items.find {|item|
     cheese_types.include?(item)
   }
 end
+
+# Using any instead of include. 
 
 # def find_the_cheese(items) # arg contains list of items called "items"
 #   # array "cheese_types" to compare against arg "items"
